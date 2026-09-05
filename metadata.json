@@ -1,0 +1,6 @@
+{
+  "name": "The Unseen",
+  "description": "An experimental digital movie archive and personal film collection inspired by underground film journals.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-display {
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  .font-serif-title {
+    font-family: 'Cinzel', serif;
+  }
+  .font-syne {
+    font-family: 'Syne', sans-serif;
+  }
+  .font-mono-code {
+    font-family: 'Space Mono', monospace;
+  }
+}
+
+/* Film & Bento Grain Texture Overlay */
+.bg-grain {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.08'/%3E%3C/svg%3E");
+}
+
+/* Hide scrollbar for drag carousels while preserving scrollability */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Custom scrollbar for Bento exhibition */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #070707;
+}
+::-webkit-scrollbar-thumb {
+  background: #FF3D00;
+  border-radius: 0px;
+}
+
+/* Editorial grid line background */
+.grid-lines {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(242, 242, 239, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(242, 242, 239, 0.04) 1px, transparent 1px);
+}
+
+/* Bento Hover Card Offset Effect */
+.bento-card-hover {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.bento-card-hover:hover {
+  border-color: #FF3D00;
+  box-shadow: 0 0 25px rgba(255, 61, 0, 0.15);
+}
+
+.bento-hover-tilt:hover {
+  transform: translateY(-3px) scale(1.01);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.9), 0 0 20px rgba(255, 61, 0, 0.25);
+}
+
+
